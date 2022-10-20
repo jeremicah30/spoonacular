@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 const RecipeItem = ({ recipe }) => {
-  console.log("hi", recipe.extendedIngredients[0].image);
-  return <div>{recipe.extendedIngredients[0].image}</div>;
+  console.log("hi", recipe);
+  return <Image src={recipe.image} width={200} height={200} alt="Brocolli" />;
 };
 export default RecipeItem;
 
