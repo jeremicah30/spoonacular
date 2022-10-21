@@ -1,0 +1,22 @@
+.grid--main {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 0px;
+
+  .grid--image-con {
+    .grid-image {
+      object-fit: contain;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+}

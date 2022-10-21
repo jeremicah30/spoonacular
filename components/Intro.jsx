@@ -1,24 +1,24 @@
-import introStyles from "../styles/components/Intro.module.scss";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import Bg from "../public/images/watermelon.jpg";
+import Bg from "../public/images/slider.jpg";
 
 const Intro = () => {
   return (
-    <div className={introStyles.main}>
+    <div className="main">
       <Swiper
-        className={introStyles.swiper}
+        className="swiper"
         navigation={true}
+        loop={true}
         modules={[Navigation]}
       >
-        <SwiperSlide className={introStyles.slides}>
-          <Image className={introStyles.image} src={Bg} alt="This is a BG" />
+        <SwiperSlide className="slides">
+          <Image className="image" src={Bg} alt="This is a BG" />
         </SwiperSlide>
-        <SwiperSlide className={introStyles.slides}>Slide 2</SwiperSlide>
-        <SwiperSlide className={introStyles.slides}>Slide 3</SwiperSlide>
+        <SwiperSlide className="slides">Slide 2</SwiperSlide>
+        <SwiperSlide className="slides">Slide 3</SwiperSlide>
       </Swiper>
     </div>
   );

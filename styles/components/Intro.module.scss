@@ -1,8 +1,6 @@
 .main {
-  margin-left: 315px;
   font-size: 28px;
-  padding: 0px 10px;
-  height: 725px;
+  height: 100%;
 
   .swiper {
     width: 100%;
@@ -39,5 +37,18 @@
   .image {
     width: 100%;
     height: 100%;
+    position: fixed;
+  }
+
+  .swiper-button-next {
+    right: 50px;
+    color: #fff;
+    font-weight: 900;
+  }
+
+  .swiper-button-prev {
+    left: 50px;
+    color: #fff;
+    font-weight: 900;
   }
 }

@@ -1,9 +1,8 @@
 import Nav from "./Nav";
-import layoutStyles from "../styles/components/Layout.module.scss";
 
 const Layout = ({ children }) => {
   return (
-    <div className={layoutStyles.main}>
+    <div className="mainLayout">
       <Nav />
       {children}
     </div>
