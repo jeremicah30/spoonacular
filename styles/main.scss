@@ -1,3 +1,7 @@
 //components
 @import "components/Intro.module.scss", "components/Layout.module.scss",
-  "components/Nav.module.scss", "components/Grid.module.scss";
+  "components/Nav.module.scss", "components/Grid.module.scss",
+  "components/Recipe.module.scss", "components/Featured.module.scss";
+
+//Variables
+@import "utils/variables";

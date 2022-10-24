@@ -6,7 +6,7 @@ import Healty from "../public/images/healty.jpg";
 const Grid = () => {
   return (
     <>
-      <div class="grid--main">
+      <div className="grid--main">
         <div className="grid--image-con  image1">
           <Image className="grid-image" src={fruits} alt="Fruits" />
         </div>
